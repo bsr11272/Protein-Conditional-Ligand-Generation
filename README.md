@@ -2,7 +2,7 @@
 
 This repository implements a novel multi-scale graph diffusion model for protein-ligand binding prediction and molecule generation. The model uses a hierarchical approach to generate molecules with desired binding properties against specific protein targets.
 
-![Multi-Scale Graph Diffusion Model Architecture](images/flowchart.jpeg)
+![Multi-Scale Graph Diffusion Model Architecture](images/flowchart.svg)
 
 ## Overview
 
