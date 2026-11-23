@@ -5,11 +5,11 @@
 
 > **How to use this document**
 > 1. Read §1–§3 until you can give the 30-second and 2-minute pitch without notes.
-> 2. Read §11 (**Known defects**) twice. This is the highest-leverage section. An interviewer who reads the code will find these; your value is demonstrated by having found them first and knowing the fix.
-> 3. Drill §12 (Q&A bank, 100+ questions) out loud.
-> 4. The night before: §18 (cram sheet) only.
+> 2. Read §12 (**Known defects**) twice. This is the highest-leverage section. An interviewer who reads the code will find these; your value is demonstrated by having found them first and knowing the fix.
+> 3. Drill §13 (Q&A bank, 100+ questions) out loud.
+> 4. The night before: §19 (cram sheet) only.
 >
-> **Framing rule for the whole interview:** present this as a *research prototype and systems-engineering exercise* that produced a working end-to-end pipeline and a clear-eyed list of what breaks — **not** as a validated drug-discovery method. The second framing is indefensible (no baselines, no docking, no held-out-protein split). The first is strong and honest, and it converts every bug in §11 into evidence of technical judgment.
+> **Framing rule for the whole interview:** present this as a *research prototype and systems-engineering exercise* that produced a working end-to-end pipeline and a clear-eyed list of what breaks — **not** as a validated drug-discovery method. The second framing is indefensible (no baselines, no docking, no held-out-protein split). The first is strong and honest, and it converts every bug in §12 into evidence of technical judgment.
 
 ---
 
@@ -452,7 +452,7 @@ The reverse conditional q(x_{t−1} | x_t) is intractable, but **conditioned on 
 
   q(x_{t−1} | x_t, x_0) = N(x_{t−1}; μ̃_t(x_t, x_0), β̃_t I), where
 
-  **μ̃_t = [√ᾱ_{t−1} β_t / (1−ᾱ_t)] · x_0 + [√α_t (1−ᾱ_{t−1}) / (1−ᾱ_t)] · x_t**
+  **μ̃_t = [√ᾱ_{t−1} β_t / (1−ᾱ_t)] · x_0 + [√α_t (1−ᾱ_{t−1}) / (1−ᾱ_t)] · x_t**  
   **β̃_t = β_t (1−ᾱ_{t−1}) / (1−ᾱ_t)**
 
 Memorise which coefficient multiplies which term: **the β_t-containing coefficient multiplies x₀; the α_t-containing coefficient multiplies x_t.** (Sanity check: at t=1, ᾱ₀=1 so the second coefficient vanishes and μ̃ = x₀ — the posterior collapses onto the data. If you ever write it with the terms swapped, this check fails.)
